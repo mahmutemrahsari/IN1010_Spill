@@ -7,9 +7,9 @@
 
 
 import java.util.Scanner;
-
+//Klassen skal ha et Scanner-objekt som parameter til konstruktøren.
 public class Terminal implements Brukergrensesnitt{
-    private Scanner scanner;
+    protected Scanner scanner;
     public Terminal(Scanner scanner){
         this.scanner=scanner;
     }
@@ -17,11 +17,14 @@ public class Terminal implements Brukergrensesnitt{
 
     @Override
     public void giStatus(String status) {
-
+        System.out.println(status);
     }
 
     @Override
     public int beOmKommando(String spoersmaal, String[] alternativer) {
+        System.out.print("Enter spoersmal:");
+         spoersmaal = scanner.next();
+
         return 0;
     }
 }

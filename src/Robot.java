@@ -5,6 +5,9 @@ Du kan skrive ut status og valg om du ønsker, for å gjøre det morsommere å
  */
 
 
+import java.util.Random;
+import java.util.Scanner;
+
 public class Robot implements Brukergrensesnitt {
 
     public Robot(){
@@ -18,6 +21,7 @@ public class Robot implements Brukergrensesnitt {
 
     @Override
     public int beOmKommando(String spoersmaal, String[] alternativer) {
-        return 0;
+        //Utveier??
+        return (int) ((int) 10*Math.random());
     }
 }

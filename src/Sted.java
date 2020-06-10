@@ -7,4 +7,8 @@ men det må finnes en metode for å gå videre, som returnerer en referanse t
  */
 
 public class Sted {
+    protected String steder;
+    public Sted(String steder){
+        this.steder=steder;
+    }
 }
